@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Chá de Cozinha – Taiane & Caique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🍳 Chá de Cozinha</h1>
+  <h2>Taiane & Caique</h2>
+  <p>Confirme sua presença e escolha um presente 💝</p>
+
+  <div class="card">
+    <h3>Login</h3>
+    <input id="name" placeholder="Seu nome">
+    <input id="email" placeholder="Email">
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <div class="card">
+    <h3>Presença</h3>
+    <button onclick="setPresence(true)">✅ Vou comparecer</button>
+    <button onclick="setPresence(false)">❌ Não poderei ir</button>
+  </div>
+
+  <div class="card">
+    <h3>Lista de Presentes 🎁</h3>
+    <select id="giftSelect"></select>
+    <button onclick="chooseGift()">Escolher Presente</button>
+  </div>
