@@ -1,7 +1,8 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  background: #1f1f1f; /* fundo escuro estilo pub */
   padding: 20px;
+  color: #f5f5f5; /* texto claro */
 }
 
 .container {
@@ -10,36 +11,45 @@ body {
 }
 
 .card {
-  background: #ffffff;
+  background: #2b2b2b; /* cinza pub */
   padding: 15px;
   margin-bottom: 15px;
-  border-radius: 8px;
+  border-radius: 10px;
+  border: 1px solid #3d3d3d; /* detalhe metálico */
 }
 
 h1, h2 {
   text-align: center;
+  color: #f2c94c; /* amarelo cerveja */
 }
 
 button {
   width: 100%;
   padding: 10px;
   margin-top: 8px;
-  background: #ff8fa3;
+  background: #f2c94c; /* amarelo cerveja */
   border: none;
-  color: white;
-  border-radius: 5px;
+  color: #1f1f1f; /* texto escuro */
+  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #ff6f91;
+  background: #e0b93f; /* amarelo mais escuro */
 }
 
 select, input {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-top: 6px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #3a3a3a; /* cinza médio */
+  color: #f5f5f5;
 }
 
+select option {
+  background: #282828;
+  color: #fff;
+}

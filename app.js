@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let chosenGifts = JSON.parse(localStorage.getItem("chosenGifts")) || [];
   let presence = localStorage.getItem("presence");
 
-  // Preenchendo a lista de presentes
+  // Carregar lista no select
   gifts.forEach(gift => {
     const option = document.createElement("option");
     option.value = gift;
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     giftSelect.appendChild(option);
   });
 
-  // Mostrar status atual
+  // Mostrar informações salvas
   if (userName) {
     statusEl.innerText = "👤 Convidado: " + userName;
   }
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
     statusEl.innerText = "👤 Convidado: " + userName;
   };
 
-  // Presença
+  // Confirmação de presença
   window.setPresence = function (presente) {
     if (!userName) {
       alert("Faça o login primeiro");
@@ -131,7 +131,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     giftEl.innerText = "🎁 Presente escolhido: " + gift;
 
-    // Atualiza a lista
     [...giftSelect.options].forEach(opt => {
       if (opt.value === gift) {
         opt.disabled = true;
